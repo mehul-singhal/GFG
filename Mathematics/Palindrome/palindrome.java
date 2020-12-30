@@ -1,7 +1,3 @@
-import java.io.*;
-import java.util.*;
-import java.lang.*;
-
 public class palindrome {
     
     static boolean isPal(int number){
