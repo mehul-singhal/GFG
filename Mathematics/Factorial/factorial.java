@@ -1,4 +1,4 @@
-package Factorial;
+package Mathematics.Factorial;
 
 class factorial {
     static int factorialIterative(int no){

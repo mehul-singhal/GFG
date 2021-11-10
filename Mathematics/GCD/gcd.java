@@ -1,3 +1,5 @@
+package Mathematics.GCD;
+
 //GCD question profile -
 //Given are 2 sides of a rectangle, find the maximum side of the square which can cover the rectangle completely. 
 
@@ -14,7 +16,7 @@ public class gcd {
         return res;
     }   
 
-    static int gcdNormal(int a , int b){
+    public static int gcdNormal(int a , int b){
         while(a!=b){
             if (a>b){
                 a = a-b;
@@ -25,7 +27,7 @@ public class gcd {
         return a;
     }
 
-    static int gcdBest(int a, int b)
+    public static int gcdBest(int a, int b)
     {
         if( b == 0)
             return a;

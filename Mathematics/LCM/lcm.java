@@ -1,3 +1,7 @@
+package Mathematics.LCM;
+
+import Mathematics.GCD.gcd;
+
 public class lcm {
     static int lcmBasic(int a, int b){
         int res = Math.max(a,b);

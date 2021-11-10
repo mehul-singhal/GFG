@@ -1,3 +1,4 @@
+package Mathematics.Palindrome;
 public class palindrome {
     
     static boolean isPal(int number){

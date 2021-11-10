@@ -1,4 +1,4 @@
-package TrailingZeroes;
+package Mathematics.TrailingZeroes;
 
 public class trailingZeroes {
     static int trailingZeroesCount(int n){
