@@ -20,8 +20,8 @@ int main()
     int n = sizeof(arr)/sizeof(arr[0]);
     reverseArray(arr,n);
     reverseArray(arr,n);
-    for(int x: arr){
-        cout<<x<<endl;
+    for(int i = 0; i< n; i++){
+        cout<<arr[i]<<endl;
     }
     return 0;
 }
