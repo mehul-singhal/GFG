@@ -1,7 +1,6 @@
 package Arrays.LeftRotateByDPlaces;
 
 import Arrays.LeftRotateBy1.leftRotateArrayBy1;
-import Arrays.Reverse.reverseArray;
 
 public class leftRotateByD {
 
