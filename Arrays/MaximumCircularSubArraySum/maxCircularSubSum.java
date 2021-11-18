@@ -22,7 +22,7 @@ public class maxCircularSubSum {
         Integer n = arr.length;
         Integer res = arr[0];
         Integer max = arr[0];
-        for(int i = 0;i<n;i++){
+        for(int i = 1;i<n;i++){
             max = Math.max(max+arr[i], arr[i]);
             res = Math.max(res,max);
         }
@@ -46,6 +46,7 @@ public class maxCircularSubSum {
         return Math.max(maxNormal, maxCircular);
     }
     public static void main(String args[]){
-
+        Integer arr[] = { 11, 10, -20, 5, -3, -5, 8, -13, 10 };
+        System.out.println(circularSubSumEfficient(arr));
     }
 }
