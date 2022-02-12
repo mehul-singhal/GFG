@@ -1,15 +1,15 @@
 public class primeFactors {
-    static void primeFactorBasic(int n){
-        for(int i = 2; i<=n ;i++){
-            if(checkPrime.checkPrimeBest(i)){
-                int x = i;
-                while(n%x == 0){
-                    System.out.println(i);
-                    x = x * i;
-                }
-            }
-        }
-    }
+    // static void primeFactorBasic(int n){
+    //     for(int i = 2; i<=n ;i++){
+    //         if(checkPrime.checkPrimeBest(i)){
+    //             int x = i;
+    //             while(n%x == 0){
+    //                 System.out.println(i);
+    //                 x = x * i;
+    //             }
+    //         }
+    //     }
+    // }
 
     static void primeFactorNormal(int n){
         if(n<=1) return;
@@ -54,9 +54,9 @@ public class primeFactors {
     }
 
     public static void main(String[] args){
-        int n = 70;
-        primeFactorBasic(n);
-        primeFactorBasic(n);
+        int n = 65;
+        // primeFactorBasic(n);
+        // primeFactorBasic(n);
         primeFactorBest(n);
     }
 }
