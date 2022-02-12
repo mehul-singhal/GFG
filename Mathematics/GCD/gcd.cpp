@@ -36,6 +36,6 @@ int main()
 {
     cout<<gcd(24,16)<<endl;
     cout<<gcdBetter(24,16)<<endl;
-    cout<<gcdBest(24,16)<<endl; 
+    cout<<gcdBest(16,24)<<endl; 
     return 0;
 }
