@@ -12,13 +12,13 @@ public abstract class recursivePower {
             return temp;
         }
         else{
-            return temp + 1;
+            return temp * x;
         }
 
     }
 
     public static void main(String[] args){
-        System.out.println(findPowerRecursive(2, 4));
+        System.out.println(findPowerRecursive(4, 2));
     }
     
 }
