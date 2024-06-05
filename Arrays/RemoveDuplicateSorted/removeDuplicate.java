@@ -19,6 +19,21 @@ public class removeDuplicate {
         }
     }
 
+    int remove_duplicate(int A[],int N){
+        // code here
+        int temp = A[0]; 
+        int index = 0;
+        
+        for(int i = 1; i<N; i++){
+            if(temp != A[i]){
+                temp = A[i];
+                index++;
+                A[index] = temp;
+            }
+        }
+        return index+1;
+    }
+
     public static void main(String args[]){
         Integer arr[] = {1,1,2,2,2,2,2,2,3,4,5,6,7,8,8,8,8,8,8,8,8};
         removeDuplicateFromArray(arr);
