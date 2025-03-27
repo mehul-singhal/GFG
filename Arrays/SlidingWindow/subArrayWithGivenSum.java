@@ -2,7 +2,7 @@ package Arrays.SlidingWindow;
 
 public class subArrayWithGivenSum {
     
-    public static boolean subArrayWithGivenSum(int arr[], int n, int sum){
+    public static boolean subArrayWithGivenSumBest(int arr[], int n, int sum){
         int curr_sum = arr[0], start=0, i;
         for(i =1;i<=n;i++){
 
@@ -30,6 +30,6 @@ public class subArrayWithGivenSum {
 		int arr[] = {15, 2, 4, 8, 9, 5, 10, 23}; 
 		int n = arr.length; 
 		int sum = 23; 
-		subArrayWithGivenSum(arr, n, sum);
+		subArrayWithGivenSumBest(arr, n, sum);
     }
 }
