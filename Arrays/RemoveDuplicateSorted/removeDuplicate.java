@@ -1,5 +1,3 @@
-package Arrays.RemoveDuplicateSorted;
-
 public class removeDuplicate {
 
     //I would use a hash set to find the uniqe elements. 
