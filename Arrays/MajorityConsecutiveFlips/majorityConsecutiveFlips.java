@@ -1,5 +1,3 @@
-package Arrays.MajorityConsecutiveFlips;
-
 public class majorityConsecutiveFlips {
 
     public static void consecutiveFlipsPrint(Integer arr[]){
