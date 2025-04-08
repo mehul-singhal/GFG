@@ -30,6 +30,7 @@ public class stockBuySell {
     public static Integer buySellEfficient(Integer arr[]){
         //The idea here is that you keep adding the profit till we have a up in the stock price when the stock price go down you let it
         //go down and the day it picks up you start adding the profit again.
+        //We are using idea of local maxima and local minima
         Integer profit = 0;
         for(int i=1;i<arr.length;i++){
             if(arr[i]>arr[i-1]){
