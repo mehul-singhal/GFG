@@ -39,6 +39,7 @@ public class maxCircularSubSum {
         for(int i = 0;i<n;i++){
             //Inverting the array to find the circular sum if it is possible.
             //If you apply kadence on the inverted array it give you the minimum sub array sum.
+            //You can also write an invereted kaden's which will find the minimum subarray sum but caluclating the minimum of the bunch
             arrSum += arr[i];
             arr[i] = -arr[i];
         }
