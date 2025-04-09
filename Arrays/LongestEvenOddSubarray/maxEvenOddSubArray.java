@@ -11,11 +11,12 @@ public class maxEvenOddSubArray {
                 (arr[i]%2 == 0 && arr[i-1]%2 != 0) ||
                 (arr[i]%2 != 0 && arr[i-1]%2 == 0)
             ){
+                //If the numbers are alternating in the array you just increase the current and then update the res;
                 current++;
                 res = Math.max(res, current);
             }
             else{
-                current = 1;
+                current = 1; //Here you are starting a new array considering a single element can also be considered as a even odd subarray
             }
         }
         return res;
