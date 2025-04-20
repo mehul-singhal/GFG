@@ -38,7 +38,7 @@ public class countOccurence {
                 high = mid-1;
             }
             else {
-                if(mid == 0 || arr[mid] != arr[mid+1]){
+                if(mid == n-1 || arr[mid] != arr[mid+1]){
                     return mid;
                 }
                 else{
