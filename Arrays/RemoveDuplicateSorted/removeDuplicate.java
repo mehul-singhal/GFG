@@ -3,7 +3,7 @@ public class removeDuplicate {
     //I would use a hash set to find the uniqe elements. 
     //This is a pure coding approach wihtout using extra data structures.
 
-    public static void removeDuplicateFromArray(Integer arr[]){
+    public static void removeDuplicateFromArray(int arr[]){
         int res = 1;
         for(int i = 1;i<arr.length;i++){
             if(arr[i]!=arr[res-1]){
@@ -12,12 +12,12 @@ public class removeDuplicate {
                 res++;
             }
         }
-        for(Integer x: arr ){
+        for(int x: arr ){
             System.out.println(x);
         }
     }
 
-    int remove_duplicate(int A[],int N){
+    public static int remove_duplicate(int A[],int N){
         // code here
         int temp = A[0]; 
         int index = 0;
@@ -33,8 +33,10 @@ public class removeDuplicate {
     }
 
     public static void main(String args[]){
-        Integer arr[] = {1,1,2,2,2,2,2,2,3,4,5,6,7,8,8,8,8,8,8,8,8};
+        int arr[] = {1,1,2,2,2,2,2,2,3,4,5,6,7,8,8,8,8,8,8,8,8};
         removeDuplicateFromArray(arr);
+        System.out.println("New Solution - "+ remove_duplicate(arr, arr.length));
+        
     }
     
 }
