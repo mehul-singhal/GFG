@@ -1,5 +1,18 @@
 import java.util.*;
 public class union {
+
+    static ArrayList<Integer> FindUnionUsingSet(int arr1[], int arr2[], int n, int m) {
+        HashSet <Integer> s=new HashSet<>();
+        ArrayList < Integer > Union=new ArrayList<>();
+        for (int i = 0; i < n; i++)
+          s.add(arr1[i]);
+        for (int i = 0; i < m; i++)
+          s.add(arr2[i]);
+        for (int it: s)
+          Union.add(it);
+        return Union;
+      }
+
     public static ArrayList<Integer> findUnion(int a[], int b[]) {
         // add your code here
         int n = a.length, m = b.length, i = 0, j = 0;
