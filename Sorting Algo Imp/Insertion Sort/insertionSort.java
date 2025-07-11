@@ -12,6 +12,19 @@ public class insertionSort {
         }
     }
 
+    public static void insertionSortRecursive(int[] arr, int i, int n) {
+        if(i == n) return;
+        int j = i;
+        while(j>0 && arr[j-1] > arr[j]){
+            int temp = arr[j];
+            arr[j] = arr[j-1];
+            arr[j-1] = temp; 
+            j--;
+        }
+
+        insertionSortRecursive(arr, i+1, n);
+    }
+
      public static void main(String[] args) {
     // Example array to be sorted
     int[] arr = {64, 25, 12, 22, 11};
@@ -19,7 +32,7 @@ public class insertionSort {
     System.out.println("Original array:");
     printArray(arr);
     // Perform selection sort
-    insertionSortForArr(arr);
+    insertionSortRecursive(arr, 0, arr.length);
     // Print sorted array
     System.out.println("Sorted array:");
     printArray(arr);
