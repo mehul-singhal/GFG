@@ -16,16 +16,6 @@ public class findTriplet {
       public static boolean findTriplets(int[] arr) {
         // code here.
         int n = arr.length;
-        //Brute Force approach
-        // for(int i = 0; i<n-2; i++){
-        //     for(int j = i+1; j<n-1; j++){
-        //         for(int k = j+1; k<n; k++){
-                    
-        //             if(arr[i]+arr[j]+arr[k] == 0) return true;
-        //         }
-        //     }
-        // }
-        
         //The best solution for this lies in two pointer approach
         //you run a loop and then set two pointers which checks triplets with this number
         //Sort the array and then do this
