@@ -36,6 +36,40 @@ public class mergeSort {
         }
     }
 
+    public static void mergeArrayDiff(int[] arr, int low, int mid, int high) {
+        int n1 = mid - low + 1;
+        int n2 = high - mid;
+        int[] left = new int[n1];
+        int[] right = new int[n2];
+
+        //Copy data to temp arrays
+        for (int i = 0; i < n1; i++) {
+            left[i] = arr[low + i]; 
+        }
+        for(int j = 0; j<n2; j++){
+            right[j] = arr[mid+j+1];
+        }
+
+        //Initiate indexs for left, right and merged arrays
+        int i = 0, j = 0, k = low;
+        //Merge the temp arrays
+        while (i < n1 && j < n2) {
+            if (left[i] <= right[j]) {
+                arr[k++] = left[i++];
+            }
+            else{
+                arr[k++] = right[j++];
+            }
+        }
+        //Copy remaining elements to the final array
+        while (i < n1) {
+            arr[k++] = left[i++];
+        }
+        while (j < n2) {
+            arr[k++] = right[j++];
+        }
+    }
+
     public static void main(String[] args) {
     // Example array to be sorted
     int[] arr = {64, 25, 12, 22, 11};
