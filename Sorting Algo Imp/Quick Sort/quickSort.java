@@ -8,6 +8,8 @@ public class quickSort {
     }
     
     public static int quickSortPivot(int[] arr, int low, int high){
+        //This is implementation of hoare's partitioning algorithm
+        //The pivot is chosen as the first element of the array
         int pivot = arr[low], i = low, j = high;
         while(i<j){
             while(arr[i] <= pivot && i<high){
