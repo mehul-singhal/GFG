@@ -4,7 +4,7 @@ public class intersection {
         // add your code here
         int n = arr1.length, m = arr2.length;
         int i = 0, j = 0;
-        ArrayList<Integer> result = new ArrayList<Integer>();
+        ArrayList<Integer> result = new ArrayList<>();
         while(i<n && j<m){
             if(i>0 && arr1[i-1] == arr1[i]){
                 i++; 
