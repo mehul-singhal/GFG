@@ -1,7 +1,7 @@
 package Arrays.MajorityElement;
 
 public class majorElement {
-    //This is moore's voting algorithm 
+    //This is moore's ifvoting algorithm 
     //In this algorithm the votes keep cancelling each other to find the majority element. 
     //This comes in handy where you need to find the majority element.
     //The basic idea here is that you assume that one of the element is the majority and increase it if you find the same number
@@ -14,7 +14,7 @@ public class majorElement {
         Integer count = 1;
         Integer n = arr.length; 
         for(int i = 1; i<n;i++){
-            if(arr[res]==arr[i]){
+            if(arr[res].equals(arr[i])){
                 count++;
             }
             else   
@@ -27,7 +27,7 @@ public class majorElement {
         }
         count = 0;
         for(int i = 0; i< n; i++){
-            if(arr[res] == arr[i]){
+            if(arr[res].equals(arr[i])){
                 count++;
             }
         }
