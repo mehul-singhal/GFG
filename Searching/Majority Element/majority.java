@@ -29,4 +29,9 @@ public class majority {
         if(count <= n/2) return -1;
         return arr[res];
     }
+
+    public static void main(String args[]){
+        int arr[] = {8, 8, 6, 6, 6, 4, 6};
+        System.out.println(majorityElement(arr));
+    }
 }
