@@ -1,8 +1,5 @@
 package Playground;
 
-import Mathematics.GCD.gcd;
-import Mathematics.TrailingZeroes.trailingZeroes;
-
 public class play1 {
 
     public static int trailingZeroes(int n){
