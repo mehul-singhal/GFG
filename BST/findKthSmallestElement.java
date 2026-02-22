@@ -51,6 +51,26 @@ public class findKthSmallestElement {
         return kthSmallest(root.right, k - count);
     }
 
+    static int result = -1;
+    static int count = 0;
+    public static int kthSmallestdiff(Node root, int k) {
+        inorder(root,k);
+        return result;
+    }
+
+    public static void inorder(Node root, int k){
+        if(root == null) return;
+        inorder(root.left, k);
+
+        count++;
+        if(count == k){
+            result = root.data;
+            return;
+        }
+
+        inorder(root.right, k);
+    }
+
     // main function
     public static void main(String args[])
     {

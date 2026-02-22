@@ -28,7 +28,7 @@ public class smallerOnRight {
         for(int i = n-1; i>=0; i--){
             //Inserting the array in the set.
             tst.add(arr[i]);
-            //Now we will check how many smaller elements we have thant he current element
+            //Now we will check how many smaller elements we have than the current element
             ans = Math.max(ans, tst.headSet(arr[i]).size());
         }
         return ans;
